@@ -1,0 +1,32 @@
+import random
+q1 = input("What is your name? ")
+q2 = input("What is your last name? ")
+print("It's nice to meet you " + q1 + " " + q2 + ".\n")
+
+a2 = ("Thats nice.")
+a3 = ("I'm glad you are doing well.")
+a4 = ("I hope your day gets better.")
+a5 = ("I'm sorry to hear that.")
+
+list = (a2, a3)
+random_answer = random.choice(list)
+list2 = (a4, a5)
+random_answer2 = random.choice(list2)
+q3 = input(q1 + " "+ "How is your day? ")
+if q3 == ("good"):
+    print(random_answer)
+else:
+    print(random_answer2)
+
+q4 = input("Where are you from?")
+print(q4 + " " + "is nice. I've heard good things about" + " " + q4 + ".\n")
+
+q5 = int(input("How old are you?"))
+if q5 <18:
+    print("Thats nice, its good to be young.")
+elif q5 >= 18:
+    a1=input("Thats nice, do you work or go to school?")
+if a1 == ("school"):
+    print("Thats nice do good in school because it is important.")
+else:
+    print("I hope you are happy with your job.")
