@@ -1,0 +1,32 @@
+#include <linkbot.h>
+CLinkbotI robot;
+
+double radius = 1.75;
+double trackwidth = 3.69;
+
+robot.setSpeed(4, radius);
+
+robot.driveDistance(3,radius);
+robot.turnLeft(30,radius,trackwidth);
+robot.driveDistance(4,radius);
+robot.turnLeft(30,radius,trackwidth);
+robot.driveDistance(4,radius);
+robot.turnLeft(25,radius,trackwidth);
+robot.driveDistance(20,radius);
+robot.turnLeft(15,radius,trackwidth);
+robot.driveDistance(5,radius);
+
+robot.turnLeft(60,radius,trackwidth);
+robot.driveDistance(28,radius);
+
+robot.turnLeft(50,radius,trackwidth);
+robot.driveDistance(29,radius);
+robot.turnLeft(35,radius,trackwidth);
+robot.driveDistance(4,radius);
+robot.turnLeft(35,radius,trackwidth);
+robot.driveDistance(5,radius);
+robot.turnLeft(60,radius,trackwidth);
+robot.driveDistance(11,radius);
+robot.turnLeft(4,radius,trackwidth);
+robot.driveDistance(34,radius);
+
