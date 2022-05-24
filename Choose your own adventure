@@ -1,0 +1,146 @@
+string_t name, roadmap, introChoice, middle1, middle2, middle3, dname, hname;
+
+
+int n;                  /*RANDOM NUMBERS AND NAME CHOICE*/
+n = randint(2, 5);
+printf("You have " ,n, " dog(s).");
+
+int r;
+r = randint(2,5);
+printf("You have " ,r, " friend(s).");
+
+printf("Please name one of your dogs.");
+scanf("%s", &dname);
+
+printf("Please name one of your friends.");
+scanf("%s", &hname);
+
+
+void intro(){               /*INTRO*/
+    printf("I've just woken up. \nIt is a bright day outside with nice sunny weather. \nI also don't have any chores to do or errands to run. \nSince the weath is nice today I think im going to spend the day outside.\nI wonder if I should hangout with " ,hname, " or play with my " ,dname, " today. \nAfter I breakfast I'm going to go play with " ,dname, " today. \nChoose what I should do. \n1. Go out for a while. \n2. Play catch with my dog(s). \n3. Stop playing with my dog(s).");
+    scanf("%s", &introChoice);
+    while(introChoice != "1" && introChoice != "2" && introChoice != "3"){
+        printf("That is not a choice.\nPlease choose a number for what I should do.\n1. Go out for a while.\n2. Play catch with " ,dname, "\n3. Stop playing with " ,dname, ".\n");
+        scanf("%s", &introChoice);
+    }
+}
+
+void middleone(){           /*MIDDLE1*/
+    printf("Where should I go? It is a sunny day so going out will be nice. I also want to go walk around so the park could be nice. I can also go get some toys to play with " ,dname, ". I might also go hangout with " ,hname, " since I haven't seen them in a while. \n1. Go to the park with " ,hname, ". \n2. Go for a walk around the neighborhood. \n3. Go for a run in the park.\n");
+    scanf("%s", &middle1);
+    while(middle1 != "1" && middle1 != "2" && middle1 != "3"){
+        printf("That is not a choice.\nPlease choose a number for what I should do. \n1.Go to the park with " ,hname, ". \n2. Go for a walk around the neighborhood. \n3. Go for a run in the park.\n");
+        scanf("%s", &middle1);
+    }
+}
+
+void endChoice1(){          /*END1*/
+    printf("I'm going to go out with " ,hname, " for a bit. We are going to head out to the park. I guess I can also bring " ,dname, " for some exercise. If we get bored we cam also play with " ,dname, ". I'm going to go pick up " ,hname, " now that we have plans.\n");
+    exit(1);
+}
+
+void endChoice2(){          /*END2*/
+    printf("I'm going for a walk around the neighborhood. After wandering around for a while I run into " ,hname, ". We then went on a short little walk to catch up with each other. I go home soon because I have to go feed " ,dname, ". After I get home I see " ,dname, " waiting for me.\n");
+    exit(1);
+}
+
+void endChoice3(){          /*END3*/
+    printf("I'm going to go for a run. I think i'm going to take " ,dname, " with me. I haven't gotten a lot of exercise lately so this could be nice. I end up running into " ,hname, " while on my run. It was nice to catch up after my run.\n");
+    exit(1);
+}
+
+
+void middletwo(){          /*MIDDLE2*/
+    printf("It is a nice day today. \nI guess i'm going to go play catch with " ,dname, ". \nI need to go to the store to get some toys. \nI wonder what my dogs would want to play with? \nI'm gonna buy a couple toys. \nWhat should we play catch with? \n1. A ball \n2. A stick \n3. A frisbee \n");
+    scanf("%s", &middle2);
+    while(middle2 != "1" && middle2 != "2" && middle2 != "3"){
+        printf("That is not a choice.\nPlease choose a number for what I should play catch with.\n1. A ball \n2. A stick \n3. A frisbee \n");
+        scanf("%s", &middle2);
+    }
+}
+
+void endChoice4(){          /*END4*/
+    printf("I'm going to go get a ball to play catch with " ,dname, ". Since I need to go to the store i'm gonna go out also. I'll go ask " ,hname, " if they want to come. After going to the store they didn't have any toys. After finally finding some toys it was already late. I'll just play another day.\n");
+    exit(1);
+}
+
+void endChoice5(){          /*END5*/
+    printf("I'm going to go get a stick to play with " ,dname, ". I'll just head out to the park. While at the park finding a stick I run into " ,hname, ". We then go play catch with my dogs. It was a fun day in the end.\n");
+    exit(1);
+}
+
+void endChoice6(){          /*END6*/
+    printf("I'm going to go get a frisbee to play with " ,dname, ". The one at home is broken so i'm gonna go to the store. While on the drive there I see " ,hname, " going to the same place as me. We then catch up while doing some shopping. After shopping I get home and take " ,dname, " to the park.\n");
+    exit(1);
+}
+
+
+void middlethree(){          /*MIDDLE3*/
+    printf("Since " ,dname, " is acting up i'm not going to play with " ,dname, " today.\nWhat should I do now?\n Its still a nice day so I want to go outside.\n I'm going to go call " ,hname, " to see if " ,dname, " can hangout today.\n I'll ask my other friends too while i'm at it.\n What should I do? \n1. Go hangout with " ,hname, ". \n2. Go out and get food. \n3. Go the the beach with my friends.\n");
+    scanf("%s", &middle3);
+    while(middle3 != "1" && middle3 != "2" && middle3 != "3"){
+        printf("That is not a choice.\nPlease choose a number for what I should do.\n1. Go hangout with " ,hname, ". \n2. Go out and get food. \n3. Go the the beach with my friends.\n");
+        scanf("%s", &middle3);
+    }
+}
+
+void endChoice7(){          /*END7*/
+    printf("I'm going to go ask " ,hname, " if he wants to hangout. Since " ,dname, " is acting up i'm going to open the cage. " ,hname, " can hangout so i'm going to go out today. This will give me a nice break from " ,dname, ".\n");
+    exit(1);
+}
+
+void endChoice8(){          /*END8*/
+    printf("I'm feeling hungry. I'm gonna go get food since i'm hungry. I'll ask " ,hname, " since I don't want to go alone. " ,hname, " can't go so I guess ill just take " ,dname, " with me. I ended up going to get McDonalds.\n");
+    exit(1);
+}
+
+void endChoice9(){          /*END9*/
+    printf("My friends asked me to go to the beach today. I think i'm gonna go because I haven't seen " ,hname, " in a while. I also haven't seen my other friends in a while so it will be fun to catch up. I'm also going to bring " ,dname, " with me. It will be a very nice day spending time with my friends and dogs.\n");
+    exit(1);
+}
+
+
+
+
+int main(){
+    intro();
+    if(introChoice == "1"){
+        middleone();
+        if (middle1 == "1"){
+            endChoice1();
+        }
+        if (middle1 == "2"){
+            endChoice2();
+        }
+        if (middle1 == "3"){
+            endChoice3();
+        }
+    }
+    if (introChoice == "2"){
+        middletwo();
+        if (middle2 == "1"){
+            endChoice4();
+        }
+        if (middle2 == "2"){
+            endChoice5();
+        }
+        if (middle2 == "3"){
+            endChoice6();
+        }
+    }
+    if (introChoice == "3"){
+        middlethree();
+        if (middle3 == "1"){
+            endChoice7();
+        }
+        if (middle3 == "2"){
+            endChoice8();
+        }
+        if (middle3 == "3"){
+            endChoice9();
+        }
+    }
+}
+
+
+
